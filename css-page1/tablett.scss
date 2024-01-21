@@ -1,0 +1,13 @@
+@media (min-width: 768px) {
+    #about-area div {
+      display: flex;
+    }
+  
+    #about-area img {
+      display: block;
+      height: 250px;
+      border: solid 1px #333;
+      background: #fff;
+      padding: 2px;
+    }
+  }
