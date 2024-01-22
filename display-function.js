@@ -19,3 +19,14 @@
   
   // Visa kurser när sidan laddas
   displayCoursesFromDatabase();
+
+
+
+  //const obj3 = {
+    //title: "title New",
+    //teacher: "Teacher New"
+//};
+
+//await adData(obj3);
+
+//console.log(await adData());

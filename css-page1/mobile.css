@@ -1,0 +1,17 @@
+.courseList {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 6em;
+}
+
+body {
+  background-color: aquamarine;
+}/*# sourceMappingURL=mobile.css.map */
