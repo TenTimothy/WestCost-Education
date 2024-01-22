@@ -1,4 +1,5 @@
-import getData from "./http.js";
+import getData from "./getdata.js";
+import adData from "./adddata.js";
 
 
 const courseListDiv = document.getElementById("courseList")
@@ -14,32 +15,24 @@ courseList.forEach((course) => {
     <div>Start Date: ${course.startDate}</div>
     <div>Available online: ${course.onlineCourse}</div>
     <div>Available on site: ${course.onSite}</div>
+    <button id="book-${course.courseNumber}" class="book-course-btn">Book Course</button>
     `
-})
+
+    document.getElementById(`book-${course.courseNumber}`).addEventListener('click', function() {
+   
+        if (!isLoggedIn()) {
+            window.location.href = 'signUpPage.html'; 
+        } else {
+            window.location.href = 'signUpPage.html';
+        }
+    });
+});
+
+
 
 console.log(await getData());
 
 
-
-// Lägga till ny DATA 
-async function adData(data) {
-    try {
-        const url = "http://localhost:3000/course"
-        const db = await fetch(url, {
-            method: "POST", //add new data
-            headers: {
-                "content-Type": "application/json"
-            },
-            body: JSON.stringify(data),
-        });
-        const response = await db.json();
-
-        return await response;
-    } catch (error) {
-        throw new Error(error);
-        
-    }
-} 
 
 //const obj3 = {
     //title: "title New",
