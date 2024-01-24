@@ -1,7 +1,7 @@
 {
   "course": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Blockchain for buissnes and law",
       "courseNumber": "BBL101",
       "duration": "8 weeks",
@@ -11,7 +11,7 @@
       "imageUrl": "/assets/1-BlockchainforBusinessandLaw.png"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "JavaScript Frontend & Blockchain",
       "courseNumber": "JSF101",
       "duration": "10 weeks",
@@ -21,7 +21,7 @@
       "imageUrl": "/assets/2-JavaScriptFrontendBlockchain.png"
     },
     {
-      "id": 3, 
+      "id": "3",
       "title": "Phython Programmering från Grundläggande till Avancerad",
       "courseNumber": "PYT201",
       "duration": "12 weeks",
@@ -31,7 +31,7 @@
       "imageUrl": "assets/3-PythonProgrammingfromBasictoAdvanced.png"
     },
     {
-      "id": 4, 
+      "id": "4",
       "title": "Frontend-utveckling med Angular",
       "courseNumber": "ANG202",
       "duration": "9 weeks",
@@ -41,36 +41,36 @@
       "imageUrl": "assets/4-FrontendDevelopmentwithAngular.png"
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "Java Programmering för Nybörjare",
       "courseNumberr": "JAV101",
       "duration": "6 weeks",
       "startDate": "2024-04-01",
       "onlineCourse": "no",
       "onSite": "yes",
-      "imageUrl": "assets/5-JavaProgrammingforBeginners.png" 
+      "imageUrl": "assets/5-JavaProgrammingforBeginners.png"
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "Maskininlärning och Artificiell Intelligens med Python",
       "courseNumber": "MLAI301",
       "duration": "14 weeks",
       "startDate": "2024-02-01",
       "onlineCourse": "yes",
       "onSite": "yes",
-      "imageUrl": "assets/6-MachineLearningandArtificialIntelligencewithPython.png" 
+      "imageUrl": "assets/6-MachineLearningandArtificialIntelligencewithPython.png"
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "Cybersäkerhet och Etisk Hacking",
       "courseNumber": "ETH101",
       "duration": "8 weeks",
       "onlineCourse": "yes",
       "onSite": "yes",
-      "imageUrl": "assets/7-CybersecurityandEthicalHacking.png" 
+      "imageUrl": "assets/7-CybersecurityandEthicalHacking.png"
     },
     {
-      "id": 8,
+      "id": "8",
       "title": "Spelutveckling med Unity och C#",
       "courseNumber": "GAME301",
       "duration": "12 weeks",
@@ -80,7 +80,7 @@
       "imageUrl": "assets/8-GameDevelopmentwithUnityandCSharp.png"
     },
     {
-      "id": 9,
+      "id": "9",
       "title": "Mobilapputveckling med Flutter och Dart",
       "courseNumber": "FLT202",
       "duration": "10 weeks",
@@ -90,14 +90,17 @@
       "imageUrl": "assets/9-MobileAppDevelopmentwithFlutterandDart.png"
     },
     {
-      "id": 10,
-      "title":"Grundläggande Webutveckling med HTML, CSS och JavaScript",
+      "id": "10",
+      "title": "Grundläggande Webutveckling med HTML, CSS och JavaScript",
       "courseNumber": "WEB101",
       "duration": "8 weeks",
       "startDate": "2024-04-15",
       "onlineCourse": "yes",
       "onSite": "yes",
-      "imageUrl": "assets/10-BasicWebDevelopmentwithHTMLCSSandJavaScript.png" 
+      "imageUrl": "assets/10-BasicWebDevelopmentwithHTMLCSSandJavaScript.png"
     }
+  ],
+  "students": [
+
   ]
 }
