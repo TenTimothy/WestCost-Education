@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <script src="script/admin.js" type="module" defer></script>
+</head>
+<body class="grid-container">
+    <header>
+        <h1 class="page-title">Westcost Education</h1>
+    </header>
+    <main>
+      <section class="container">
+        <h3>Course module</h3>
+        <form id="newCourseForm">
+            <div class="form-control">
+                <label for="newCourseTitle">Course Title</label>
+                <input
+                  type="text"
+                  name="newCourseTitle"
+                  id="newCourseTitle"
+                  placeholder="newCourseTitle" />
+            </div>    
+            <div class="form-control">
+            <label for="courseNumber">Course Nummber</label>
+            <input
+              type="text"
+              name="courseNumber"
+              id="courseNumber"
+              placeholder="Course Number" />
+          </div>
+          <div class="form-control">
+            <label for="duration">Numbers of weeks the course lasts</label>
+            <input
+              type="text"
+              name="duration"
+              id="duration"
+              placeholder="duration" />
+          </div>
+          <div class="form-control">
+            <label for="cost">Cost</label>
+            <input
+              type="text"
+              name="cost"
+              id="cost"
+              placeholder="cost" />
+          </div>
+          <div class="form-control">
+            <label for="startDate">Start Date</label>
+            <input
+              type="text"
+              name="startDate"
+              id="startDate"
+              placeholder="(ex 2024-01-01)" />
+          </div>
+          <div class="form-control">
+            <label for="onlineCourse">Online course</label>
+            <input
+              type="text"
+              name="onlineCourse"
+              id="onlineCourse"
+              placeholder="available online" />
+          </div>
+          <div class="form-control">
+            <label for="onSite">On site</label>
+            <input
+              type="text"
+              name="onSite"
+              id="onSite"
+              placeholder="available on-site" />
+          </div>
+          <div class="form-control">
+            <button
+              type="submit"
+              class="btn">
+              add
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
