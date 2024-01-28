@@ -41,3 +41,10 @@ for (const course of getCourse) {
 
 	coursesContainer.appendChild(courseElement);
 }
+
+const addCourseButton = document.getElementById('addCourseButton');
+const addCoursButton = document.getElementById('addCours'); // Ändrade id till "addCours"
+addCoursButton.addEventListener('click', () => {
+	// Skicka användaren till admin.html när knappen klickas
+	window.location.href = 'admin.html';
+});
