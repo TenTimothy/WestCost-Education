@@ -8,22 +8,16 @@ export const renderDom = async () => {
 	const adminBtn = document.createElement('button');
 	adminBtn.className = 'admin-btn';
 	adminBtn.textContent = 'Admin';
-	adminBtn.onclick = () => (window.location.href = 'enrolled.html');
+	adminBtn.onclick = () => (window.location.href = 'enrolledStudent.html');
 
 	const bookCourseBtn = document.createElement('button');
 	bookCourseBtn.className = 'book-course-btn';
 	bookCourseBtn.textContent = 'Book Course';
 	bookCourseBtn.onclick = () => (window.location.href = 'signUpPage.html');
 
-	//const enrolledBtn = document.createElement('button');
-	//enrolledBtn.className = 'enrolled-course-btn';
-	//enrolledBtn.textContent = 'Enrolled';
-	//enrolledBtn.onclick = () => (window.location.href = 'enrolled.html');
-
 	// Lägg till knapparna i navigationsmenyn
 	headerNav.appendChild(adminBtn);
 	headerNav.appendChild(bookCourseBtn);
-	//headerNav.appendChild(enrolledBtn);
 
 	// Funktion för att ladda och visa kurser
 	async function loadCourses() {
@@ -43,8 +37,7 @@ export const renderDom = async () => {
           <div>Duration: ${course.duration}</div>
           <div>Start Date: ${course.startDate}</div>
           <div>Available online: ${course.onlineCourse ? 'yes' : 'no'}</div>
-          <div>Available on site: ${course.onSite}</div>
-          <div>Cost: ${course.cost}</div>    
+          <div>Available on site: ${course.onSite}</div>   
           <button id="book-${
 						course.courseNumber
 					}" class="book-course-btn">Book Course</button>

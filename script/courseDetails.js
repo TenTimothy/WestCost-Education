@@ -23,7 +23,8 @@ export const renderCourseDetails = async () => {
           <div>Start Date: ${course.startDate}</div>
           <div>Available online: ${course.onlineCourse ? 'yes' : 'no'}</div>
           <div>Available on site: ${course.onSite}</div>
-          <div>Cost: ${course.cost}</div>    
+          <div>Cost: ${course.cost}</div>  
+		  <p>Description: ${course.description}</p>  
           <button id="book-${
 						course.courseNumber
 					}" class="book-course-btn">Book Course</button>

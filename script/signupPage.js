@@ -6,7 +6,7 @@ const selectCourse = document.querySelector('#courseSelection');
 const option = document.createElement('option');
 selectCourse.appendChild(option);
 
-option.appendChild(document.createTextNode('select a course'));
+option.appendChild(document.createTextNode('Select a course'));
 
 courses.forEach((course) => {
 	const option = document.createElement('option');
@@ -21,13 +21,19 @@ async function addNewData(e) {
 	const formData = new FormData(signUpData);
 	const data = Object.fromEntries(formData.entries());
 
-	// Hitta kursen baserat på det valda kurs-ID:t
+	// Find the course based on the selected course ID
 	const selectedCourse = courses.find(
 		(course) => course.id === data.courseSelection
 	);
 	if (selectedCourse) {
-		// Lägg till kursens titel i data-objektet
+		// Add the course title to the data object
 		data.courseTitle = selectedCourse.title;
+	}
+
+	// Check if any of the form fields are empty
+	if (Object.values(data).some((value) => value.trim() === '')) {
+		alert('Please fill in all fields.');
+		return;
 	}
 
 	await adData(data);
@@ -36,3 +42,11 @@ async function addNewData(e) {
 }
 
 signUpData.addEventListener('submit', addNewData);
+
+// Event listener for the button with ID "myButton"
+const myButton = document.getElementById('myButton');
+
+myButton.addEventListener('click', function () {
+	// Your code to run when the button is clicked
+	alert('The button was clicked!');
+});
