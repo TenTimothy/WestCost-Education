@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css-style/admin-page/addCourse-page/style-addCourse.css">
+    <script src="script/adminAddCourse.js" type="module" defer></script>
+</head>
+<body class="grid-container">
+    <header>
+        <h1 class="page-title">Westcoast Education</h1>
+    </header>
+    <main>
+        <section class="container">
+            <h3>Course module</h3>
+            <form id="newCourseForm">
+                <div class="form-control">
+                    <label for="newCourseTitle">Course Title</label>
+                    <input
+                        type="text"
+                        name="newCourseTitle"
+                        id="newCourseTitle"
+                        placeholder="Course Title"
+                        required 
+                    />
+                </div>    
+                <div class="form-control">
+                    <label for="courseNumber">Course Number</label>
+                    <input
+                        type="text"
+                        name="courseNumber"
+                        id="courseNumber"
+                        placeholder="Course Number"
+                        required 
+                    />
+                </div>
+                <div class="form-control">
+                    <label for="duration">Number of weeks the course lasts</label>
+                    <input
+                        type="text"
+                        name="duration"
+                        id="duration"
+                        placeholder="Number of weeks"
+                        required 
+                    />
+                </div>
+                <div class="form-control">
+                    <label for="cost">Cost</label>
+                    <input
+                        type="text"
+                        name="cost"
+                        id="cost"
+                        placeholder="Cost"
+                        required 
+                    />
+                </div>
+                <div class="form-control">
+                    <label for="startDate">Start Date</label>
+                    <input
+                        type="text"
+                        name="startDate"
+                        id="startDate"
+                        placeholder="YYYY-MM-DD"
+                        required 
+                    />
+                </div>
+                <div class="form-control">
+                    <label for="onlineCourse">Online course</label>
+                    <input
+                        type="text"
+                        name="onlineCourse"
+                        id="onlineCourse"
+                        placeholder="Available online"
+                        required 
+                    />
+                </div>
+                <div class="form-control">
+                    <label for="onSite">On site</label>
+                    <input
+                        type="text"
+                        name="onSite"
+                        id="onSite"
+                        placeholder="Available on-site"
+                        required 
+                    />
+                </div>
+                <div class="form-control">
+                    <label for="description">Description</label>
+                    <input
+                        type="text"
+                        name="description"
+                        id="description"
+                        placeholder="Describe the course"
+                        required
+                    />
+                </div>
+                <div class="form-control">
+                    <button
+                        type="submit"
+                        class="btn"
+                    >
+                        Add
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

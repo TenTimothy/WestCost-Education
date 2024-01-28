@@ -9,7 +9,8 @@
       "onlineCourse": true,
       "onSite": "yes",
       "cost": "8000kr",
-      "imageUrl": "/assets/1-BlockchainforBusinessandLaw.png"
+      "imageUrl": "/assets/1-BlockchainforBusinessandLaw.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac risus eu dui accumsan dictum. Proin auctor, velit ac euismod efficitur, libero metus efficitur ipsum, sit amet lacinia ipsum metus id velit."
     },
     {
       "id": "2",
@@ -20,139 +21,175 @@
       "onlineCourse": true,
       "onSite": "yes",
       "cost": "10000kr",
-      "imageUrl": "/assets/2-JavaScriptFrontendBlockchain.png"
+      "imageUrl": "/assets/2-JavaScriptFrontendBlockchain.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac risus eu dui accumsan dictum. Proin auctor, velit ac euismod efficitur, libero metus efficitur ipsum, sit amet lacinia ipsum metus id velit."
     },
     {
       "id": "3",
-      "title": "Phython Programmering från Grundläggande till Avancerad",
+      "title": "Python Programming(Basic to Advanced)",
       "courseNumber": "PYT201",
       "duration": "12 weeks",
       "startDate": "2024-01-10",
       "onlineCourse": false,
       "onSite": "yes",
       "cost": "11000kr",
-      "imageUrl": "assets/3-PythonProgrammingfromBasictoAdvanced.png"
+      "imageUrl": "assets/3-PythonProgrammingfromBasictoAdvanced.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac risus eu dui accumsan dictum. Proin auctor, velit ac euismod efficitur, libero metus efficitur ipsum, sit amet lacinia ipsum metus id velit."
     },
     {
       "id": "4",
-      "title": "Frontend-utveckling med Angular",
+      "title": "Frontend Development with Angular",
       "courseNumber": "ANG202",
       "duration": "9 weeks",
       "startDate": "2024-03-15",
       "onlineCourse": false,
       "onSite": "yes",
       "cost": "8000kr",
-      "imageUrl": "assets/4-FrontendDevelopmentwithAngular.png"
+      "imageUrl": "assets/4-FrontendDevelopmentwithAngular.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac risus eu dui accumsan dictum. Proin auctor, velit ac euismod efficitur, libero metus efficitur ipsum, sit amet lacinia ipsum metus id velit."
     },
     {
       "id": "5",
-      "title": "Java Programmering för Nybörjare",
+      "title": "Java Programming for Beginners",
       "courseNumberr": "JAV101",
       "duration": "6 weeks",
       "startDate": "2024-04-01",
       "onlineCourse": false,
       "onSite": "yes",
       "cost": "5600kr",
-      "imageUrl": "assets/5-JavaProgrammingforBeginners.png"
+      "imageUrl": "assets/5-JavaProgrammingforBeginners.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac risus eu dui accumsan dictum. Proin auctor, velit ac euismod efficitur, libero metus efficitur ipsum, sit amet lacinia ipsum metus id velit."
     },
     {
       "id": "6",
-      "title": "Maskininlärning och Artificiell Intelligens med Python",
+      "title": "Machine Learning & AI with Python",
       "courseNumber": "MLAI301",
       "duration": "14 weeks",
       "startDate": "2024-02-01",
       "onlineCourse": false,
       "onSite": "yes",
       "cost": "11900kr",
-      "imageUrl": "assets/6-MachineLearningandArtificialIntelligencewithPython.png"
+      "imageUrl": "assets/6-MachineLearningandArtificialIntelligencewithPython.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac risus eu dui accumsan dictum. Proin auctor, velit ac euismod efficitur, libero metus efficitur ipsum, sit amet lacinia ipsum metus id velit."
     },
     {
       "id": "7",
-      "title": "Cybersäkerhet och Etisk Hacking",
+      "title": "Cybersecurity and Ethical Hacking",
       "courseNumber": "ETH101",
       "duration": "8 weeks",
       "onlineCourse": true,
       "onSite": "yes",
       "cost": "8000kr",
-      "imageUrl": "assets/7-CybersecurityandEthicalHacking.png"
+      "imageUrl": "assets/7-CybersecurityandEthicalHacking.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac risus eu dui accumsan dictum. Proin auctor, velit ac euismod efficitur, libero metus efficitur ipsum, sit amet lacinia ipsum metus id velit."
     },
     {
       "id": "8",
-      "title": "Spelutveckling med Unity och C#",
+      "title": "Game Development with Unity and C#",
       "courseNumber": "GAME301",
       "duration": "12 weeks",
       "startDate": "2024-01-20",
       "onlineCourse": false,
       "onSite": "yes",
       "cost": "8000kr",
-      "imageUrl": "assets/8-GameDevelopmentwithUnityandCSharp.png"
+      "imageUrl": "assets/8-GameDevelopmentwithUnityandCSharp.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac risus eu dui accumsan dictum. Proin auctor, velit ac euismod efficitur, libero metus efficitur ipsum, sit amet lacinia ipsum metus id velit."
     },
     {
       "id": "9",
-      "title": "Mobilapputveckling med Flutter och Dart",
+      "title": "Mobile App Development with Flutter",
       "courseNumber": "FLT202",
       "duration": "10 weeks",
       "startDate": "2024-02-10",
       "onlineCourse": true,
       "onSite": "yes",
       "cost": "10000kr",
-      "imageUrl": "assets/9-MobileAppDevelopmentwithFlutterandDart.png"
+      "imageUrl": "assets/9-MobileAppDevelopmentwithFlutterandDart.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac risus eu dui accumsan dictum. Proin auctor, velit ac euismod efficitur, libero metus efficitur ipsum, sit amet lacinia ipsum metus id velit."
     },
     {
       "id": "10",
-      "title": "Grundläggande Webutveckling med HTML, CSS och JavaScript",
+      "title": "Basic Web Development with HTML & CSS",
       "courseNumber": "WEB101",
       "duration": "8 weeks",
       "startDate": "2024-04-15",
       "onlineCourse": true,
       "onSite": "yes",
       "cost": "8000kr",
-      "imageUrl": "assets/10-BasicWebDevelopmentwithHTMLCSSandJavaScript.png"
+      "imageUrl": "assets/10-BasicWebDevelopmentwithHTMLCSSandJavaScript.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac risus eu dui accumsan dictum. Proin auctor, velit ac euismod efficitur, libero metus efficitur ipsum, sit amet lacinia ipsum metus id velit."
     },
     {
-      "id": "1c41",
+      "id": "ba92",
       "title": "Blockchain programming ",
       "courseNumber": "BCP",
       "duration": "10 weeks",
       "startDate": "2024-08-07",
       "onlineCourse": "yes",
       "onSite": "yes",
-      "cost": "20000kr"
-    },
-    {
-      "id": "7093",
-      "title": "Blockchain programming ",
-      "courseNumber": "BCP",
-      "duration": "10 weeks",
-      "startDate": "2024-08-07",
-      "onlineCourse": "yes",
-      "onSite": "yes",
-      "cost": "20000kr"
+      "cost": "20000kr",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac risus eu dui accumsan dictum. Proin auctor, velit ac euismod efficitur, libero metus efficitur ipsum, sit amet lacinia ipsum metus id velit."
     }
   ],
   "students": [
     {
-      "id": "14d1",
+      "id": "6b95",
       "courseSelection": "1",
-      "customerName": "Saba",
+      "customerName": "Saba Timothy",
       "invoiceAdress": "Kyrkogatan 31",
       "mail": "saba.timothy@live.se",
       "mobileNumber": "07073374682",
       "courseTitle": "Blockchain for buissnes and law"
     },
     {
-      "id": "14d2",
+      "id": "6cb5",
+      "courseSelection": "6",
+      "customerName": "Sarah Robsson ",
+      "invoiceAdress": "Kyrkogatan 31",
+      "mail": "saba.timothy@live.se",
+      "mobileNumber": "07073374682",
+      "courseTitle": "Machine Learning & AI with Python"
+    },
+    {
+      "id": "da4f",
       "courseSelection": "1",
-      "customerName": "Rowel",
+      "customerName": "Jane Doe",
       "invoiceAdress": "Kyrkogatan 31",
       "mail": "saba.timothy@live.se",
       "mobileNumber": "07073374682",
       "courseTitle": "Blockchain for buissnes and law"
     },
     {
-      "id": "14d3",
-      "courseSelection": "2",
-      "customerName": "Sarah",
+      "id": "27fe",
+      "courseSelection": "1",
+      "customerName": "John Doe",
+      "invoiceAdress": "Kyrkogatan 31",
+      "mail": "saba.timothy@live.se",
+      "mobileNumber": "07073374682",
+      "courseTitle": "Blockchain for buissnes and law"
+    },
+    {
+      "id": "42ea",
+      "courseSelection": "3",
+      "customerName": "Shan James",
+      "invoiceAdress": "Kyrkogatan 31",
+      "mail": "saba.timothy@live.se",
+      "mobileNumber": "07073374682",
+      "courseTitle": "Python Programming(Basic to Advanced)"
+    },
+    {
+      "id": "2d7a",
+      "courseSelection": "3",
+      "customerName": "Ziggy Erics",
+      "invoiceAdress": "Kyrkogatan 31",
+      "mail": "saba.timothy@live.se",
+      "mobileNumber": "07073374682",
+      "courseTitle": "Python Programming(Basic to Advanced)"
+    },
+    {
+      "id": "ea25",
+      "courseSelection": "1",
+      "customerName": "Reema Johnsson",
       "invoiceAdress": "Kyrkogatan 31",
       "mail": "saba.timothy@live.se",
       "mobileNumber": "07073374682",
