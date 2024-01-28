@@ -1,54 +1,61 @@
 import getData from './getdata.js';
 
 export const renderDom = async () => {
+	const headerNav = document.getElementById('headerNav');
 	const courseListDiv = document.getElementById('courseList');
 
-	// Lägg till Admin-knappen här
-	courseListDiv.innerHTML = `<button class="admin-btn">Admin</button>
-    <button class="book-course-btn">Book Course</button>
-    </div>
-	<button class="enrolled-course-btn">enrolled</button>
-    </div>`;
+	// Skapa och lägg till knapparna i headerns nav
+	const adminBtn = document.createElement('button');
+	adminBtn.className = 'admin-btn';
+	adminBtn.textContent = 'Admin';
+	adminBtn.onclick = () => (window.location.href = 'enrolled.html');
 
-	const courseList = await getData('course');
+	const bookCourseBtn = document.createElement('button');
+	bookCourseBtn.className = 'book-course-btn';
+	bookCourseBtn.textContent = 'Book Course';
+	bookCourseBtn.onclick = () => (window.location.href = 'signUpPage.html');
+
+	//const enrolledBtn = document.createElement('button');
+	//enrolledBtn.className = 'enrolled-course-btn';
+	//enrolledBtn.textContent = 'Enrolled';
+	//enrolledBtn.onclick = () => (window.location.href = 'enrolled.html');
+
+	// Lägg till knapparna i navigationsmenyn
+	headerNav.appendChild(adminBtn);
+	headerNav.appendChild(bookCourseBtn);
+	//headerNav.appendChild(enrolledBtn);
+
+	// Funktion för att ladda och visa kurser
 	async function loadCourses() {
-		const courseList = await getData('course');
-		courseList.forEach((course) => {
-			courseListDiv.innerHTML += `
-                <div class="course.item">
-                    <h3>${course.title}</h3>
-                    <div class="product-card">
-                        <img src="${
-													course.imageUrl
-												}" width="360px" height="360px" loading="lazy">
-                    </div>
-                    <div class="infoText">
-                        <div>Course Number: ${course.courseNumber}</div>
-                        <div>Duration: ${course.duration}</div>
-                        <div>Start Date: ${course.startDate}</div>
-                        <div>Available online: ${
-													course.onlineCourse ? 'yes' : 'no'
-												}</div>
-                        <div>Available on site: ${course.onSite}</div>
-                    </div>
-					<div> Cost: ${course.cost}</div>    
-                    <button id="book-${
-											course.courseNumber
-										}" class="book-course-btn">Book Course</button>
-                </div>`;
+		const courses = await getData('course');
+		courses.forEach((course) => {
+			const courseDiv = document.createElement('div');
+			courseDiv.className = 'course-item';
+			courseDiv.innerHTML = `
+        <h3>${course.title}</h3>
+        <div class="product-card">
+          <img src="${
+						course.imageUrl
+					}" width="360px" height="360px" loading="lazy">
+        </div>
+        <div class="infoText">
+          <div>Course Number: ${course.courseNumber}</div>
+          <div>Duration: ${course.duration}</div>
+          <div>Start Date: ${course.startDate}</div>
+          <div>Available online: ${course.onlineCourse ? 'yes' : 'no'}</div>
+          <div>Available on site: ${course.onSite}</div>
+          <div>Cost: ${course.cost}</div>    
+          <button id="book-${
+						course.courseNumber
+					}" class="book-course-btn">Book Course</button>
+        </div>`;
+			courseListDiv.appendChild(courseDiv);
 		});
 	}
 
 	courseListDiv.addEventListener('click', function (event) {
 		if (event.target && event.target.classList.contains('book-course-btn')) {
 			window.location.href = 'signUpPage.html';
-		} else if (event.target && event.target.classList.contains('admin-btn')) {
-			window.location.href = 'admin.html';
-		} else if (
-			event.target &&
-			event.target.classList.contains('enrolled-course-btn')
-		) {
-			window.location.href = 'enrolled.html';
 		}
 	});
 
