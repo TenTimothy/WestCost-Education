@@ -48,6 +48,9 @@ export const renderDom = async () => {
           <button id="book-${
 						course.courseNumber
 					}" class="book-course-btn">Book Course</button>
+			<a href="courseDetails.html?id=${
+				course.id
+			}" class="more-detail-btn">More details</a>			
         </div>`;
 			courseListDiv.appendChild(courseDiv);
 		});
