@@ -21,16 +21,13 @@ async function addNewData(e) {
 	const formData = new FormData(signUpData);
 	const data = Object.fromEntries(formData.entries());
 
-	// Find the course based on the selected course ID
 	const selectedCourse = courses.find(
 		(course) => course.id === data.courseSelection
 	);
 	if (selectedCourse) {
-		// Add the course title to the data object
 		data.courseTitle = selectedCourse.title;
 	}
 
-	// Check if any of the form fields are empty
 	if (Object.values(data).some((value) => value.trim() === '')) {
 		alert('Please fill in all fields.');
 		return;
@@ -43,10 +40,8 @@ async function addNewData(e) {
 
 signUpData.addEventListener('submit', addNewData);
 
-// Event listener for the button with ID "myButton"
 const myButton = document.getElementById('myButton');
 
 myButton.addEventListener('click', function () {
-	// Your code to run when the button is clicked
 	alert('The button was clicked!');
 });

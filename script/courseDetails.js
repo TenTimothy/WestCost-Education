@@ -3,7 +3,7 @@ import getData from './getdata.js';
 export const renderCourseDetails = async () => {
 	const courseListDiv = document.getElementById('courseList');
 
-	// Funktion för att ladda och visa kurser
+	r;
 	async function loadCourses() {
 		const courseSearch = location.search.split('=')[1];
 		const course = await getData(`course/${courseSearch}`);

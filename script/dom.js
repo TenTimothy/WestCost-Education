@@ -4,7 +4,6 @@ export const renderDom = async () => {
 	const headerNav = document.getElementById('headerNav');
 	const courseListDiv = document.getElementById('courseList');
 
-	// Skapa och lägg till knapparna i headerns nav
 	const adminBtn = document.createElement('button');
 	adminBtn.className = 'admin-btn';
 	adminBtn.textContent = 'Admin';
@@ -15,11 +14,9 @@ export const renderDom = async () => {
 	bookCourseBtn.textContent = 'Book Course';
 	bookCourseBtn.onclick = () => (window.location.href = 'signUpPage.html');
 
-	// Lägg till knapparna i navigationsmenyn
 	headerNav.appendChild(adminBtn);
 	headerNav.appendChild(bookCourseBtn);
 
-	// Funktion för att ladda och visa kurser
 	async function loadCourses() {
 		const courses = await getData('course');
 		courses.forEach((course) => {

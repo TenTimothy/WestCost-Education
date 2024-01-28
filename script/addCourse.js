@@ -1,9 +1,8 @@
-// Lägga till ny DATA
 export default async function addCourse(data, dataBase) {
 	try {
 		const url = `http://localhost:3000/${dataBase}`;
 		const db = await fetch(url, {
-			method: 'POST', //add new data
+			method: 'POST',
 			headers: {
 				'content-Type': 'application/json',
 			},
