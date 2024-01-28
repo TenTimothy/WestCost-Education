@@ -203,6 +203,15 @@
       "mail": "saba.timothy@live.se",
       "mobileNumber": "07073374682",
       "courseTitle": "Python Programming(Basic to Advanced)"
+    },
+    {
+      "id": "f476",
+      "courseSelection": "6",
+      "customerName": "Levi TIm",
+      "invoiceAdress": "Kyrkogatan 31",
+      "mail": "saba.timothy@live.se",
+      "mobileNumber": "07073374682",
+      "courseTitle": "Machine Learning & AI with Python"
     }
   ]
 }
